@@ -24,5 +24,12 @@ jobs:
             - name: Install dependencies
               run: npm i
               
-            - name: Run app
+            - name: Run tests
+              run: npm test
+
+            - name: Run server 
               run: npm start
+            #   timer for 10 seconds to run the server
+              timeout-minutes: 1
+              
+            
